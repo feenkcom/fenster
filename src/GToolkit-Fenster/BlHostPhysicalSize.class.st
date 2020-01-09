@@ -1,0 +1,19 @@
+Class {
+	#name : #BlHostPhysicalSize,
+	#superclass : #BlHostSize,
+	#category : #'GToolkit-Fenster-Geometry'
+}
+
+{ #category : #converting }
+BlHostPhysicalSize >> asLogical: aScaleFactor [
+	| aWidth aHeight |
+	
+	self
+		assert: [ aScaleFactor > 0 and: [ aScaleFactor isInfinite not ] ]
+		description: [ 'Scale factor must be a positive non-infinite number' ].
+
+	aWidth := self width / aScaleFactor asFloat.
+	aHeight := self height / aScaleFactor asFloat.
+
+	^ BlHostLogicalSize width: aWidth height: aHeight
+]
