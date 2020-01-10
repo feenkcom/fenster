@@ -9,6 +9,11 @@ Class {
 }
 
 { #category : #'instance creation' }
+GtFensterPosition class >> fromPoint: aPoint [
+	^ self x: aPoint x y: aPoint y
+]
+
+{ #category : #'instance creation' }
 GtFensterPosition class >> x: aX y: aY [
 	^ self new initializeX: aX Y: aY
 ]
