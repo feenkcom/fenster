@@ -9,6 +9,11 @@ Class {
 }
 
 { #category : #'instance creation' }
+GtFensterSize class >> fromPoint: aPoint [
+	^ self width: aPoint x height: aPoint y
+]
+
+{ #category : #'instance creation' }
 GtFensterSize class >> width: aWidth height: aHeight [
 	^ self new initializeWidth: aWidth height: aHeight
 ]
