@@ -107,6 +107,13 @@ GtFensterPosition >> printOn: aStream [
 		nextPutAll: ' }'
 ]
 
+{ #category : #'truncation and round off' }
+GtFensterPosition >> rounded [
+	^ self class
+		x: self x floor
+		y: self y floor
+]
+
 { #category : #accessing }
 GtFensterPosition >> x [
 	<return: #Number>
