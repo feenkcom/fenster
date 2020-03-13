@@ -9,7 +9,7 @@ BaselineOfGToolkitFenster >> baseline: spec [
 	<baseline>
 	spec for: #'common' do: [
 		spec baseline: 'GToolkitExamplesEngine' with: [
-				spec repository: 'github://feenkcom/gtoolkit-examples:v0.7.12/src' ].
+				spec repository: 'github://feenkcom/gtoolkit-examples:v0.7.13/src' ].
 		spec package: 'GToolkit-Fenster' with: [
 				spec requires: #(#GToolkitExamplesEngine ). ]. ].
 
