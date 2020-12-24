@@ -1,7 +1,7 @@
 Class {
 	#name : #GtFensterLogicalSize,
 	#superclass : #GtFensterSize,
-	#category : #'GToolkit-Fenster-Geometry'
+	#category : #'Fenster-Geometry'
 }
 
 { #category : #'api - converting' }

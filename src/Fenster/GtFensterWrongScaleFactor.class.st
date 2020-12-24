@@ -4,7 +4,7 @@ Class {
 	#instVars : [
 		'scaleFactor'
 	],
-	#category : #'GToolkit-Fenster-Errors'
+	#category : #'Fenster-Errors'
 }
 
 { #category : #'instance creation' }

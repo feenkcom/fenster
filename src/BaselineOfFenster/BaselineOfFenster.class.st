@@ -1,15 +1,16 @@
 Class {
-	#name : #BaselineOfGToolkitFenster,
+	#name : #BaselineOfFenster,
 	#superclass : #BaselineOf,
-	#category : #BaselineOfGToolkitFenster
+	#category : #BaselineOfFenster
 }
 
 { #category : #baselines }
-BaselineOfGToolkitFenster >> baseline: spec [
+BaselineOfFenster >> baseline: spec [
 	<baseline>
 	spec for: #common do: [
 		spec
 			baseline: 'GToolkitExamplesEngine' with: [ spec repository: 'github://feenkcom/gtoolkit-examples/src' ].
 		spec
-			package: 'GToolkit-Fenster' with: [ spec requires: #(GToolkitExamplesEngine) ] ]
+			package: 'Fenster';
+			package: 'Fenster' with: [ spec requires: #(Fenster GToolkitExamplesEngine) ] ]
 ]

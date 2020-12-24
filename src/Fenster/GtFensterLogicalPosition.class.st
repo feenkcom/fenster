@@ -1,7 +1,7 @@
 Class {
 	#name : #GtFensterLogicalPosition,
 	#superclass : #GtFensterPosition,
-	#category : #'GToolkit-Fenster-Geometry'
+	#category : #'Fenster-Geometry'
 }
 
 { #category : #'api - converting' }

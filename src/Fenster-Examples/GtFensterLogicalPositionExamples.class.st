@@ -1,7 +1,7 @@
 Class {
 	#name : #GtFensterLogicalPositionExamples,
 	#superclass : #GtFensterPositionExamples,
-	#category : #'GToolkit-Fenster-Examples'
+	#category : #'Fenster-Examples'
 }
 
 { #category : #accessing }

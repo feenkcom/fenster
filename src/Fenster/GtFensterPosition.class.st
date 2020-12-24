@@ -5,7 +5,7 @@ Class {
 		'x',
 		'y'
 	],
-	#category : #'GToolkit-Fenster-Geometry'
+	#category : #'Fenster-Geometry'
 }
 
 { #category : #'instance creation' }
