@@ -1,5 +1,5 @@
 Class {
-	#name : #GtFensterError,
+	#name : #FensterError,
 	#superclass : #Error,
 	#category : #'Fenster-Errors'
 }

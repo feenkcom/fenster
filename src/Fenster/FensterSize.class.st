@@ -1,5 +1,5 @@
 Class {
-	#name : #GtFensterSize,
+	#name : #FensterSize,
 	#superclass : #Object,
 	#instVars : [
 		'width',
@@ -9,17 +9,17 @@ Class {
 }
 
 { #category : #'instance creation' }
-GtFensterSize class >> fromPoint: aPoint [
+FensterSize class >> fromPoint: aPoint [
 	^ self width: aPoint x height: aPoint y
 ]
 
 { #category : #'instance creation' }
-GtFensterSize class >> width: aWidth height: aHeight [
+FensterSize class >> width: aWidth height: aHeight [
 	^ self new initializeWidth: aWidth height: aHeight
 ]
 
 { #category : #comparing }
-GtFensterSize >> = anObject [
+FensterSize >> = anObject [
 	"Answer whether the receiver and anObject represent the same object."
 
 	self == anObject
@@ -30,42 +30,42 @@ GtFensterSize >> = anObject [
 ]
 
 { #category : #'api - converting' }
-GtFensterSize >> asLogical: aScaleFactor [
-	<return: #GtFensterLogicalSize>
+FensterSize >> asLogical: aScaleFactor [
+	<return: #FensterLogicalSize>
 	
 	^ self subclassResponsibility
 ]
 
 { #category : #'api - converting' }
-GtFensterSize >> asPhysical: aScaleFactor [
-	<return: #GtFensterPhysicalSize>
+FensterSize >> asPhysical: aScaleFactor [
+	<return: #FensterPhysicalSize>
 	
 	^ self subclassResponsibility
 ]
 
 { #category : #'api - converting' }
-GtFensterSize >> asPoint [
+FensterSize >> asPoint [
 	<return: #Point>
 
 	^ self width @ self height
 ]
 
 { #category : #comparing }
-GtFensterSize >> hash [
+FensterSize >> hash [
 	"Answer an integer value that is related to the identity of the receiver."
 
 	^ height hash bitXor: width hash
 ]
 
 { #category : #accessing }
-GtFensterSize >> height [
+FensterSize >> height [
 	<return: #Number>
 
 	^ height
 ]
 
 { #category : #initialization }
-GtFensterSize >> initialize [
+FensterSize >> initialize [
 	super initialize.
 	
 	width := 0.
@@ -73,20 +73,20 @@ GtFensterSize >> initialize [
 ]
 
 { #category : #initialization }
-GtFensterSize >> initializeWidth: aWidth height: aHeight [
+FensterSize >> initializeWidth: aWidth height: aHeight [
 	width := aWidth.
 	height := aHeight
 ]
 
 { #category : #testing }
-GtFensterSize >> isZero [
+FensterSize >> isZero [
 	<return: #Boolean>
 	
 	^ self width isZero or: [ self height isZero ]
 ]
 
 { #category : #printing }
-GtFensterSize >> printOn: aStream [
+FensterSize >> printOn: aStream [
 	aStream
 		nextPutAll: self class name;
 		nextPutAll: ' { width: ';
@@ -97,7 +97,7 @@ GtFensterSize >> printOn: aStream [
 ]
 
 { #category : #accessing }
-GtFensterSize >> width [
+FensterSize >> width [
 	<return: #Number>
 
 	^ width

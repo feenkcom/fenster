@@ -1,6 +1,6 @@
 Class {
-	#name : #GtFensterWrongScaleFactor,
-	#superclass : #GtFensterError,
+	#name : #FensterWrongScaleFactor,
+	#superclass : #FensterError,
 	#instVars : [
 		'scaleFactor'
 	],
@@ -8,12 +8,12 @@ Class {
 }
 
 { #category : #'instance creation' }
-GtFensterWrongScaleFactor class >> scaleFactor: aNumber [
+FensterWrongScaleFactor class >> scaleFactor: aNumber [
 	^ self new scaleFactor: aNumber
 ]
 
 { #category : #accessing }
-GtFensterWrongScaleFactor >> description [
+FensterWrongScaleFactor >> description [
 
 	^ 'Wrong scale factor',  (scaleFactor
 		ifNotNil: [ ' ({1})' format: { scaleFactor } ]
@@ -21,6 +21,6 @@ GtFensterWrongScaleFactor >> description [
 ]
 
 { #category : #accessing }
-GtFensterWrongScaleFactor >> scaleFactor: aNumber [
+FensterWrongScaleFactor >> scaleFactor: aNumber [
 	scaleFactor := aNumber
 ]
