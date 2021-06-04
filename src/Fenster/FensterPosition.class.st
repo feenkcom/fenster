@@ -1,5 +1,5 @@
 "
-1. Fenster Position
+# Fenster Position
 
 Represents a position of an object on a display and is given by (x,y) coordinates.
 There are two types of position:
