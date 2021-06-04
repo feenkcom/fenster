@@ -1,10 +1,12 @@
 "
-! Fenster Position
+1. Fenster Position
 
 Represents a position of an object on a display and is given by (x,y) coordinates.
 There are two types of position:
 	* logical position - defined in dpi independent points
 	* physical position - defined in physical pixels
+
+
 "
 Class {
 	#name : #FensterPosition,
