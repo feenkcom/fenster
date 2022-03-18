@@ -96,6 +96,11 @@ FensterSize >> printOn: aStream [
 		nextPutAll: ' }'
 ]
 
+{ #category : #'api - converting' }
+FensterSize >> rounded [
+	^ self class fromPoint: self asPoint asIntegerPoint
+]
+
 { #category : #accessing }
 FensterSize >> width [
 	<return: #Number>
