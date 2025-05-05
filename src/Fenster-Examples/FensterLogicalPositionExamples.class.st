@@ -7,10 +7,10 @@ Class {
 { #category : #accessing }
 FensterLogicalPositionExamples >> asLogicalFromPhysical [
 	<gtExample>
+	<return: #FensterLogicalPosition>
 	| aLogicalPosition |
-	
-	aLogicalPosition := ((self fromPoint: 100@200) asPhysical: 2) asLogical: 2.
-	self assert: aLogicalPosition asPoint equals: 100@200.
+	aLogicalPosition := ((self fromPoint: 100 @ 200) asPhysical: 2) asLogical: 2.
+	self assert: aLogicalPosition asPoint equals: 100 @ 200.
 
 	^ aLogicalPosition
 ]
@@ -18,11 +18,11 @@ FensterLogicalPositionExamples >> asLogicalFromPhysical [
 { #category : #accessing }
 FensterLogicalPositionExamples >> asPhysical [
 	<gtExample>
+	<return: #FensterPhysicalPosition>
 	| aLogicalPosition aPhysicalPosition |
-	
-	aLogicalPosition := self fromPoint: 100@200.
+	aLogicalPosition := self fromPoint: 100 @ 200.
 	aPhysicalPosition := aLogicalPosition asPhysical: 2.
-	self assert: aPhysicalPosition asPoint equals: 200@400.
+	self assert: aPhysicalPosition asPoint equals: 200 @ 400.
 
 	^ aPhysicalPosition
 ]
@@ -30,23 +30,23 @@ FensterLogicalPositionExamples >> asPhysical [
 { #category : #accessing }
 FensterLogicalPositionExamples >> default [
 	<gtExample>
+	<return: #FensterLogicalPosition>
 	| aPosition |
-	
 	aPosition := FensterLogicalPosition new.
 	self assert: aPosition isZero.
 	self assert: aPosition x equals: 0.
 	self assert: aPosition y equals: 0.
-	
+
 	^ aPosition
 ]
 
 { #category : #accessing }
 FensterLogicalPositionExamples >> fromPoint [
 	<gtExample>
+	<return: #FensterLogicalPosition>
 	| aPosition |
-	
-	aPosition := self fromPoint: 100@200.
-	
+	aPosition := self fromPoint: 100 @ 200.
+
 	^ aPosition
 ]
 
